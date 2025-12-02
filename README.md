@@ -526,5 +526,41 @@ a=a&b=b{apiKey}
 }
 ```
 
+# 查询可用金额数量
 
+**接口URL**
 
+> /api/open/order/allAmountCanUseNum
+
+**请求方式**
+
+> POST
+
+**Content-Type**
+
+> json
+
+**请求Body参数**
+
+```javascript
+{
+}
+```
+
+**响应示例**
+
+* 成功(200)
+
+```javascript
+{
+  "code": 1,
+  "message": "success",
+  "data": [{"amount":"500", "count": 500}] 
+}
+```
+
+* 失败(404)
+
+```javascript
+暂无数据
+```
