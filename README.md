@@ -553,9 +553,30 @@ a=a&b=b{apiKey}
 
 ```javascript
 {
-  "code": 1,
-  "message": "success",
-  "data": [{"amount":"500", "count": 500}] 
+	"code": 1,
+	"message": "success",
+	"data": [
+		{
+			"amount": 500,
+			"count": 43
+		},
+		{
+			"amount": 1000,
+			"count": 53
+		},
+		{
+			"amount": 2000,
+			"count": 11
+		},
+		{
+			"amount": 3000,
+			"count": 11
+		},
+		{
+			"amount": 10,
+			"count": 1
+		}
+	]
 }
 ```
 
