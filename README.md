@@ -272,13 +272,17 @@ a=a&b=b{apiKey}
         "paidAmount": 0,
         "paymentTime": "1969-12-31T17:00:00.000Z",
         "remark": "This is a test remark",
-        "status": "timeout",
+        "status": "refund",
         "fee": 0,
         "reviewTime": "1969-12-31T17:00:00.000Z",
         "timeoutTime": "2025-11-19T09:16:09.000Z",
         "cancelTime": "2025-11-19T09:17:10.000Z",
         "failedTime": "1969-12-31T17:00:00.000Z",
-        "payUrl": "upi://pay?pa=amazonpaygiftcardload@apl&pn=Amazon%20Pay%20Gift%20Card&mc=6540&tid=APL019a9b61c981f6b0e20b3be999943780&tr=i93r3fT6YeDHYdb4xbgRJ1WbGrVKCy2t9IS&cu=INR&tn=You%20are%20paying%20for%20an%20Amazon%20order&am=1000.00"
+        "payUrl": "upi://pay?pa=amazonpaygiftcardload@apl&pn=Amazon%20Pay%20Gift%20Card&mc=6540&tid=APL019a9b61c981f6b0e20b3be999943780&tr=i93r3fT6YeDHYdb4xbgRJ1WbGrVKCy2t9IS&cu=INR&tn=You%20are%20paying%20for%20an%20Amazon%20order&am=1000.00",
+
+        "refundTime": "1969-12-31T17:00:00.000Z",
+        "refundAmount": "1000.0",
+        "refundRefNum": "536442924581"
       }
     ]
   }
@@ -518,9 +522,14 @@ a=a&b=b{apiKey}
 {
     "order_no":"xxxxx", // 订单号
     "merchant_trade_no":"aaaaa", // 商家订单号
-    "order_status":"paid", // 订单状态 
+    "order_status":"refund", // 订单状态 
     "amount":"100", // 金额
     "pay_timestamp": 1747099235132, // 支付时间
+
+    "refund_time": "1969-12-31T17:00:00.000Z", //退款时间
+    "refund_amount": "1000.0", // 退款金额
+    "refund_ref_num": "536442924581" // 退款Reference Number
+
     "sign_type":"MD5", // 签名类型
     "sign":"xxx" // 签名
 }
